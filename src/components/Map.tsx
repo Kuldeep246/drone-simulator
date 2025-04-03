@@ -30,7 +30,7 @@ const MapUpdater = ({ center }: { center: [number, number] }) => {
   return null;
 };
 
-export const Map = ({ waypoints, currentPosition, isPlaying }: MapProps) => {
+export const Map = ({ waypoints, currentPosition }: MapProps) => {
   const [center, setCenter] = useState<[number, number]>([0, 0]);
 
   useEffect(() => {
